@@ -55,4 +55,3 @@ This project is licensed under the MIT License.
 ### 💡 Notes
 This project was created as a practice project to strengthen React basics.
 Feel free to fork it, open issues, or suggest improvements!
->>>>>>> 2a92f57e7f1caf7f2cdb447d13611910c52e89ca
