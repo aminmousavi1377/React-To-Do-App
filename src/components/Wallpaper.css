@@ -1,0 +1,54 @@
+.wallpaper-container {
+    position: relative;
+}
+
+.wallpaper-select-btn {
+    background-color: transparent;
+    font-size: 1.4rem;
+}
+
+.wallpaper-select-btn svg {
+    color: var(--white);
+}
+
+.wallpaper-box {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    left: auto;
+    width: 300px;
+    height: auto;
+    background-color: var(--light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.wallpaper-box-title {
+    grid-column: 1 / -1;
+    margin: 0.5rem 0;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wallpaper-box-close {
+    height: 25px;
+    line-height: 25px;
+}
+
+.wallpaper-box-item {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.wallpaper-box-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

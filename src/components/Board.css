@@ -1,0 +1,24 @@
+.board {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-width: 100%;
+    gap: 1.5rem;
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.board::-webkit-scrollbar {
+    height: 10px;
+}
+
+.board::-webkit-scrollbar-track {
+    background: var(--light);
+}
+
+.board::-webkit-scrollbar-thumb {
+    background: var(--main);
+    border-radius: 50rem;
+}

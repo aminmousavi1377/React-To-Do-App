@@ -1,0 +1,14 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.app {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+}

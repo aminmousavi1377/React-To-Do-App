@@ -1,0 +1,133 @@
+.list-add-btn,
+.list-add-form,
+.list {
+    display: flex;
+    flex-shrink: 0;
+    width: 280px;
+    padding: 0.85rem;
+    box-shadow: var(--box-shadow);
+}
+
+.list-add-btn {
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-tp);
+    color: var(--light);
+}
+
+.list-add-form {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    background-color: var(--light);
+    border-radius: var(--border-radius);
+}
+
+.list-add-input {
+    border: 2px solid var(--main);
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.list-add-confirm {
+    background-color: var(--main);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+}
+
+.list-add-cancel {
+    background-color: var(--red);
+    color: var(--white);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    position: relative;
+    flex-direction: column;
+    background-color: var(--light);
+    color: var(--dark);
+    border-radius: var(--border-radius);
+    height: max-content;
+    max-height: 100%;
+}
+
+.list-header {
+    display: flex;
+    align-items: center;
+}
+
+.list-title {
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0 0.25rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+}
+
+.list-edit-input {
+    width: 100%;
+    border: 2px solid var(--main);
+}
+
+.list-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    flex-shrink: 0;
+    margin: 0.5rem 0;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.list-delete-btn,
+.list-edit-btn {
+    background-color: transparent;
+    font-size: inherit;
+}
+
+.list-delete-btn:hover {
+    color: var(--red);
+}
+
+.list-edit-btn:hover {
+    color: var(--main);
+}
+
+.list-filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3px;
+    flex-grow: 1;
+    padding: 0.35rem;
+    background-color: #dbe7db;
+    font-size: 0.75rem;
+}
+
+.list-items {
+    padding: 0 0.25rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.list-items::-webkit-scrollbar {
+    width: 5px;
+}
+
+.list-items::-webkit-scrollbar-track {
+    background: var(--white-tp);
+}
+
+.list-items::-webkit-scrollbar-thumb {
+    background: var(--main);
+    border-radius: 50rem;
+}

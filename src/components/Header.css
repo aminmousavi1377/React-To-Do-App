@@ -1,0 +1,13 @@
+.header {
+    background-color: var(--white-tp);
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 2px solid var(--white-tp);
+}
+
+.header h1 {
+    margin: 0;
+    color: var(--light);
+}
