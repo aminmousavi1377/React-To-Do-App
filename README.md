@@ -34,7 +34,7 @@ npm run dev
 ---
 
 ### 🛠 Built With
-React
+React / Typescript
 
 JavaScript (ES6+)
 
