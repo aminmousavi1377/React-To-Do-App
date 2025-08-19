@@ -1,13 +1,4 @@
-import type { ListType, ItemType } from "../types";
-
-type ListActionType =
-    | { type: "listAdd"; listTitle: string }
-    | { type: "listEdit"; listId: string; listTitle: string }
-    | { type: "listDelete"; listId: string }
-    | { type: "listReorder"; activeId: string; overId: string }
-    | { type: "itemAdd"; listId: string; itemTitle: string }
-    | { type: "itemCheck"; listId: string; itemId: string }
-    | { type: "itemReorder"; listId: string; activeId: string; overId: string };
+import type { ListType, ItemType, ListActionType } from "../types";
 
 export const listsReducer = (lists: ListType[], action: ListActionType) => {
     switch (action.type) {

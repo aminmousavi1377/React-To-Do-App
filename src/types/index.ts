@@ -16,3 +16,12 @@ export interface ItemType {
     checked: boolean;
     ordering: number;
 }
+
+export type ListActionType =
+    | { type: "listAdd"; listTitle: string }
+    | { type: "listEdit"; listId: string; listTitle: string }
+    | { type: "listDelete"; listId: string }
+    | { type: "listReorder"; activeId: string; overId: string }
+    | { type: "itemAdd"; listId: string; itemTitle: string }
+    | { type: "itemCheck"; listId: string; itemId: string }
+    | { type: "itemReorder"; listId: string; activeId: string; overId: string };
